@@ -10,9 +10,9 @@ namespace Extensions
             return $"This vehicle is {vehicle.Make} - {vehicle.Model}.";
         }
 
-        public static Object GetObjectType( this IVehicle type )
+        public static Type GetObjectType( this IVehicle vehicle )
         {
-            return type.GetType();
+            return vehicle.GetType();
         }
     }
 }
