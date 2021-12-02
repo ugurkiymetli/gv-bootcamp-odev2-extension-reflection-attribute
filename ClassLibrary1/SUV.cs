@@ -1,17 +1,24 @@
 ﻿using System;
 
-namespace ConsoleApp1
+namespace ClassLibrary1
 {
-    public class SUV : Vehicle
+    public class SUV : VehicleBase, IVehicle
     {
-        public SUV( string make, string model ) : base(make, model)
+        public SUV( string make, string model )
         {
+            Make = make;
+            Model = model;
         }
-        //abstract oluşturduğumuz methodumuzu burda eziyoruz
-        public override void GoSomewhere()
+        public int Id { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public EngineBase Engine { get; set; }
+
+        public override void Drive()
         {
-            base.GoSomewhere();
-            Console.Write("offroad.");
+            //Engine.StartEngine();
+            //Engine.Accelerate();
+            Console.WriteLine("Go somewhere by offroad!");
         }
     }
 }
