@@ -5,6 +5,7 @@ namespace Extensions
 {
     public static class Extensions
     {
+        //gets vehicle make + model
         public static string GetVehicleMakeModel( this IVehicle vehicle )
         {
             return $"This vehicle is {vehicle.Make} - {vehicle.Model}.";
