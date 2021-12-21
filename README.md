@@ -1,13 +1,16 @@
-# Ödevler - Hafta 2
+# Assignment - Week 2
 
 ### Extension
-
-ClassLibrary'de bulunan araba class'larından 2 adet nesneyi ConsoleApp'te program.cs üzerinde oluşturdum.
-Extension klasöründe GetVehicleMakeModel adında arabanın marka-modelini dönen ve GetObjectType ile objenin tipini dönen 2 adet extension yazdım. Bunu ConsoleApp üzerinde çağırdım.
+I created 2 car classes in consoleApp. 
+Created 2 extension methods.
+- GetVehicleMakeModel ( get car make + model )
+- GetObjectType ( gets type of the object )
+Called these extensions on console app.
 
 ### Attribute - Filter
-
-WebApplication içersinde Filters klasöründe LoginFilter adında bir ActionFilter'ı yazdım. Burada basit bir user auth işlemi yapılıyor. Eğer user "admin" veya "superAdmin" ise HomeController-Index çalışıyor, değilse HomeController-Error çalışıyor.
+Created a LoginFilter ( ActionFilter ). It is a simple autauthorization filter. Checks if use is admin or superAdmin. 
+- If so routes to HomeController-Index.
+- If not routes to HomeController-Error.
 
 ### Dependency Injection
 
